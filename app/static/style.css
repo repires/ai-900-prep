@@ -212,6 +212,17 @@ footer {
     padding: 20px;
 }
 
+.footer-credit {
+    margin-top: 15px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.footer-legal {
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
 /* Quiz Styles */
 .quiz-setup, .results {
     background: white;
