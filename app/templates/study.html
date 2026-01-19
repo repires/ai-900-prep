@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Notes - AI-900</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="/" class="back-link">&larr; Back to Home</a>
+            <h1>Study Notes</h1>
+        </header>
+
+        <div class="study-nav">
+            <button class="study-tab active" onclick="showSection('overview')">Overview</button>
+            <button class="study-tab" onclick="showSection('responsible')">Responsible AI</button>
+            <button class="study-tab" onclick="showSection('ml')">Machine Learning</button>
+            <button class="study-tab" onclick="showSection('vision')">Computer Vision</button>
+            <button class="study-tab" onclick="showSection('nlp')">NLP</button>
+            <button class="study-tab" onclick="showSection('genai')">Generative AI</button>
+        </div>
+
+        <div class="study-content">
+            <section id="overview" class="study-section active">
+                <h2>Exam Overview</h2>
+                <div class="info-box">
+                    <h3>Passing Score: 700/1000</h3>
+                    <p>Duration: 65 minutes | ~45-50 questions</p>
+                </div>
+
+                <h3>Skills Measured (May 2025)</h3>
+                <table class="domain-table">
+                    <tr><th>Domain</th><th>Weight</th></tr>
+                    <tr><td>AI Workloads & Responsible AI</td><td>15-20%</td></tr>
+                    <tr><td>Machine Learning Principles</td><td>15-20%</td></tr>
+                    <tr><td>Computer Vision</td><td>15-20%</td></tr>
+                    <tr><td>Natural Language Processing</td><td>15-20%</td></tr>
+                    <tr class="highlight"><td>Generative AI Workloads</td><td>20-25%</td></tr>
+                </table>
+
+                <div class="tip-box">
+                    <h4>Exam Tip</h4>
+                    <p>Generative AI is the largest section - prioritize studying Azure AI Foundry and Azure OpenAI Service!</p>
+                </div>
+            </section>
+
+            <section id="responsible" class="study-section">
+                <h2>Six Principles of Responsible AI</h2>
+
+                <div class="principle-card">
+                    <h3>1. Fairness</h3>
+                    <p>AI systems should treat all people fairly without bias based on gender, race, religion, or other factors.</p>
+                    <p class="example"><strong>Example:</strong> A loan approval AI should not discriminate based on gender or race.</p>
+                </div>
+
+                <div class="principle-card">
+                    <h3>2. Reliability and Safety</h3>
+                    <p>AI should perform consistently and safely, handling unexpected situations and resisting manipulation.</p>
+                    <p class="example"><strong>Example:</strong> An autonomous vehicle must respond safely to unexpected road conditions.</p>
+                </div>
+
+                <div class="principle-card">
+                    <h3>3. Privacy and Security</h3>
+                    <p>Protect personal data, comply with regulations, and secure data storage and transmission.</p>
+                    <p class="example"><strong>Example:</strong> A health AI must protect patient medical records.</p>
+                </div>
+
+                <div class="principle-card">
+                    <h3>4. Inclusiveness</h3>
+                    <p>AI should empower everyone, including people with disabilities, considering diverse human experiences.</p>
+                    <p class="example"><strong>Example:</strong> Voice recognition should work for people with different accents.</p>
+                </div>
+
+                <div class="principle-card">
+                    <h3>5. Transparency</h3>
+                    <p>AI decisions should be understandable and explainable. Document algorithms and enable interpretability.</p>
+                    <p class="example"><strong>Example:</strong> A credit scoring AI should explain why an application was denied.</p>
+                </div>
+
+                <div class="principle-card">
+                    <h3>6. Accountability</h3>
+                    <p>People must be accountable for AI systems with clear governance, roles, and audit trails.</p>
+                    <p class="example"><strong>Example:</strong> Organizations must have processes to address AI system failures.</p>
+                </div>
+            </section>
+
+            <section id="ml" class="study-section">
+                <h2>Machine Learning Concepts</h2>
+
+                <h3>ML Techniques</h3>
+                <div class="concept-grid">
+                    <div class="concept-card">
+                        <h4>Regression</h4>
+                        <p>Predicts continuous numeric values</p>
+                        <p class="example">House prices, temperature, sales</p>
+                    </div>
+                    <div class="concept-card">
+                        <h4>Classification</h4>
+                        <p>Predicts categorical labels</p>
+                        <p class="example">Spam detection, disease diagnosis</p>
+                    </div>
+                    <div class="concept-card">
+                        <h4>Clustering</h4>
+                        <p>Groups similar data (unsupervised)</p>
+                        <p class="example">Customer segmentation</p>
+                    </div>
+                </div>
+
+                <h3>Key Terms</h3>
+                <ul class="term-list">
+                    <li><strong>Features:</strong> Input variables (X) used for prediction</li>
+                    <li><strong>Labels:</strong> Output variable (Y) being predicted</li>
+                    <li><strong>Training Data:</strong> Data used to train the model (70-80%)</li>
+                    <li><strong>Validation Data:</strong> Data to evaluate performance (20-30%)</li>
+                </ul>
+
+                <div class="tip-box">
+                    <h4>Exam Tip</h4>
+                    <p>Data should be split into ROWS (samples), NOT columns! AutoML's "Explain best model" = Transparency principle.</p>
+                </div>
+            </section>
+
+            <section id="vision" class="study-section">
+                <h2>Computer Vision</h2>
+
+                <h3>Key Solutions</h3>
+                <div class="concept-grid">
+                    <div class="concept-card">
+                        <h4>Image Classification</h4>
+                        <p>Assigns ONE label to entire image</p>
+                    </div>
+                    <div class="concept-card">
+                        <h4>Object Detection</h4>
+                        <p>Locates multiple objects with bounding boxes</p>
+                    </div>
+                    <div class="concept-card">
+                        <h4>OCR</h4>
+                        <p>Extracts text from images</p>
+                    </div>
+                    <div class="concept-card">
+                        <h4>Facial Detection</h4>
+                        <p>Detects faces and analyzes attributes</p>
+                    </div>
+                </div>
+
+                <h3>Face Service Operations</h3>
+                <ul class="term-list">
+                    <li><strong>Detect:</strong> Find faces and attributes (glasses, age, emotion)</li>
+                    <li><strong>Verify:</strong> 1-to-1 comparison of two faces</li>
+                    <li><strong>Identify:</strong> 1-to-many matching against a group</li>
+                </ul>
+
+                <div class="tip-box">
+                    <h4>Exam Tip</h4>
+                    <p>Use Face DETECT to check for attributes like sunglasses. Face VERIFY for identity confirmation.</p>
+                </div>
+            </section>
+
+            <section id="nlp" class="study-section">
+                <h2>Natural Language Processing</h2>
+
+                <h3>Key NLP Features</h3>
+                <div class="concept-grid">
+                    <div class="concept-card">
+                        <h4>Sentiment Analysis</h4>
+                        <p>Positive/Negative/Neutral tone</p>
+                    </div>
+                    <div class="concept-card">
+                        <h4>Key Phrase Extraction</h4>
+                        <p>Main concepts from text</p>
+                    </div>
+                    <div class="concept-card">
+                        <h4>Named Entity Recognition</h4>
+                        <p>People, places, organizations</p>
+                    </div>
+                    <div class="concept-card">
+                        <h4>Language Detection</h4>
+                        <p>Identify text language</p>
+                    </div>
+                </div>
+
+                <h3>Azure Services</h3>
+                <ul class="term-list">
+                    <li><strong>Azure AI Language:</strong> Text analysis (sentiment, NER, key phrases)</li>
+                    <li><strong>Azure AI Speech:</strong> Speech-to-text and text-to-speech</li>
+                    <li><strong>Azure AI Translator:</strong> Text and document translation</li>
+                </ul>
+
+                <div class="tip-box">
+                    <h4>Exam Tip</h4>
+                    <p>Speech Recognition = Speech-to-Text. Speech Synthesis = Text-to-Speech.</p>
+                </div>
+            </section>
+
+            <section id="genai" class="study-section">
+                <h2>Generative AI (20-25%)</h2>
+                <div class="warning-box">This is the largest section - study thoroughly!</div>
+
+                <h3>Key Concepts</h3>
+                <ul class="term-list">
+                    <li><strong>LLMs:</strong> Large Language Models trained on massive text data</li>
+                    <li><strong>Transformers:</strong> Architecture using attention mechanisms</li>
+                    <li><strong>Prompt Engineering:</strong> Crafting effective inputs</li>
+                    <li><strong>RAG:</strong> Retrieval-Augmented Generation to reduce hallucinations</li>
+                    <li><strong>Hallucinations:</strong> AI generating false plausible information</li>
+                </ul>
+
+                <h3>Azure Services</h3>
+                <div class="concept-grid">
+                    <div class="concept-card highlight">
+                        <h4>Azure AI Foundry</h4>
+                        <p>Unified platform for AI development</p>
+                    </div>
+                    <div class="concept-card highlight">
+                        <h4>Azure OpenAI Service</h4>
+                        <p>Access to GPT-4, DALL-E, Whisper</p>
+                    </div>
+                    <div class="concept-card">
+                        <h4>Model Catalog</h4>
+                        <p>Browse and deploy AI models</p>
+                    </div>
+                </div>
+
+                <h3>Prompting Techniques</h3>
+                <ul class="term-list">
+                    <li><strong>Zero-shot:</strong> Direct question, no examples</li>
+                    <li><strong>Few-shot:</strong> Include examples in prompt</li>
+                    <li><strong>Chain-of-thought:</strong> Ask model to explain reasoning</li>
+                </ul>
+
+                <div class="tip-box">
+                    <h4>Exam Tip</h4>
+                    <p>Know Azure AI Foundry and Azure OpenAI Service well. Understand RAG for grounding and reducing hallucinations.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.study-section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.study-tab').forEach(t => t.classList.remove('active'));
+
+            // Show selected section
+            document.getElementById(sectionId).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Quiz - AI-900</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="/" class="back-link">&larr; Back to Home</a>
+            <h1>Practice Quiz</h1>
+        </header>
+
+        <div class="quiz-setup" id="quiz-setup">
+            <h2>Configure Your Quiz</h2>
+            <div class="form-group">
+                <label for="domain-select">Select Domain:</label>
+                <select id="domain-select">
+                    <option value="all">All Domains</option>
+                    <option value="AI Workloads">AI Workloads & Responsible AI</option>
+                    <option value="Machine Learning">Machine Learning</option>
+                    <option value="Computer Vision">Computer Vision</option>
+                    <option value="NLP">Natural Language Processing</option>
+                    <option value="Generative AI">Generative AI</option>
+                    <option value="Responsible AI">Responsible AI</option>
+                    <option value="Azure Services">Azure Services</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question-count">Number of Questions:</label>
+                <select id="question-count">
+                    <option value="5">5 Questions</option>
+                    <option value="10" selected>10 Questions</option>
+                    <option value="15">15 Questions</option>
+                    <option value="25">All Available</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+        <div class="quiz-container" id="quiz-container" style="display: none;">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="question-counter">
+                Question <span id="current-question">1</span> of <span id="total-questions">10</span>
+            </div>
+
+            <div class="question-card" id="question-card">
+                <div class="domain-tag" id="domain-tag"></div>
+                <h3 id="question-text"></h3>
+                <div class="options" id="options"></div>
+                <div class="explanation" id="explanation" style="display: none;"></div>
+                <button class="btn btn-primary" id="next-btn" style="display: none;" onclick="nextQuestion()">Next Question</button>
+            </div>
+        </div>
+
+        <div class="results" id="results" style="display: none;">
+            <h2>Quiz Complete!</h2>
+            <div class="score-display">
+                <div class="score" id="score">0</div>
+                <div class="score-label">out of <span id="total-score">10</span></div>
+            </div>
+            <div class="score-percentage" id="score-percentage"></div>
+            <div class="score-message" id="score-message"></div>
+            <div class="results-actions">
+                <button class="btn btn-primary" onclick="location.reload()">Try Again</button>
+                <a href="/" class="btn btn-secondary">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let questions = [];
+        let currentIndex = 0;
+        let score = 0;
+        let answered = false;
+
+        async function startQuiz() {
+            const domain = document.getElementById('domain-select').value;
+            const count = document.getElementById('question-count').value;
+
+            const response = await fetch(`/api/questions?domain=${domain}&count=${count}`);
+            questions = await response.json();
+
+            if (questions.length === 0) {
+                alert('No questions found for this domain. Try another.');
+                return;
+            }
+
+            document.getElementById('quiz-setup').style.display = 'none';
+            document.getElementById('quiz-container').style.display = 'block';
+            document.getElementById('total-questions').textContent = questions.length;
+
+            showQuestion();
+        }
+
+        function showQuestion() {
+            answered = false;
+            const q = questions[currentIndex];
+
+            document.getElementById('current-question').textContent = currentIndex + 1;
+            document.getElementById('progress').style.width = ((currentIndex + 1) / questions.length * 100) + '%';
+            document.getElementById('domain-tag').textContent = q.domain;
+            document.getElementById('question-text').textContent = q.question;
+            document.getElementById('explanation').style.display = 'none';
+            document.getElementById('next-btn').style.display = 'none';
+
+            const optionsDiv = document.getElementById('options');
+            optionsDiv.innerHTML = '';
+
+            q.options.forEach((option, index) => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.textContent = option;
+                btn.onclick = () => selectAnswer(index);
+                optionsDiv.appendChild(btn);
+            });
+        }
+
+        function selectAnswer(selected) {
+            if (answered) return;
+            answered = true;
+
+            const q = questions[currentIndex];
+            const buttons = document.querySelectorAll('.option-btn');
+
+            buttons.forEach((btn, index) => {
+                btn.disabled = true;
+                if (index === q.correct) {
+                    btn.classList.add('correct');
+                } else if (index === selected) {
+                    btn.classList.add('incorrect');
+                }
+            });
+
+            if (selected === q.correct) {
+                score++;
+            }
+
+            const explanation = document.getElementById('explanation');
+            explanation.innerHTML = `<strong>${selected === q.correct ? 'Correct!' : 'Incorrect.'}</strong> ${q.explanation}`;
+            explanation.style.display = 'block';
+            explanation.className = selected === q.correct ? 'explanation correct' : 'explanation incorrect';
+
+            document.getElementById('next-btn').style.display = 'block';
+        }
+
+        function nextQuestion() {
+            currentIndex++;
+            if (currentIndex < questions.length) {
+                showQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        function showResults() {
+            document.getElementById('quiz-container').style.display = 'none';
+            document.getElementById('results').style.display = 'block';
+
+            document.getElementById('score').textContent = score;
+            document.getElementById('total-score').textContent = questions.length;
+
+            const percentage = Math.round((score / questions.length) * 100);
+            document.getElementById('score-percentage').textContent = percentage + '%';
+
+            let message = '';
+            if (percentage >= 70) {
+                message = 'Great job! You passed! Keep studying to solidify your knowledge.';
+                document.getElementById('score-percentage').classList.add('pass');
+            } else {
+                message = 'Keep practicing! Review the study materials and try again.';
+                document.getElementById('score-percentage').classList.add('fail');
+            }
+            document.getElementById('score-message').textContent = message;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,804 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "domain": "AI Workloads",
+      "question": "A company develops a webchat bot to provide automated answers to common customer queries. Which business benefit should the company expect?",
+      "options": ["Increased sales", "A reduced workload for customer service agents", "Improved product reliability"],
+      "correct": 1,
+      "explanation": "Webchat bots automate responses to common queries, reducing the workload on human customer service agents."
+    },
+    {
+      "id": 2,
+      "domain": "Machine Learning",
+      "question": "For a machine learning project, how should you split data for training and evaluation?",
+      "options": ["Use features for training and labels for evaluation", "Randomly split the data into rows for training and rows for evaluation", "Use labels for training and features for evaluation", "Randomly split the data into columns for training and columns for evaluation"],
+      "correct": 1,
+      "explanation": "Data should be randomly split into rows (samples), not columns. Typically 70-80% for training and 20-30% for testing."
+    },
+    {
+      "id": 3,
+      "domain": "Responsible AI",
+      "question": "You build a machine learning model using automated ML. You need to ensure the model meets the Microsoft transparency principle. What should you do?",
+      "options": ["Set Validation type to Auto", "Enable Explain best model", "Set Primary metric to accuracy", "Set Max concurrent iterations to 0"],
+      "correct": 1,
+      "explanation": "Enabling 'Explain best model' provides model interpretability, which supports the transparency principle."
+    },
+    {
+      "id": 4,
+      "domain": "Responsible AI",
+      "question": "You are designing an AI system that empowers everyone, including people who have hearing, visual, and other impairments. This is an example of which Microsoft guiding principle for responsible AI?",
+      "options": ["Fairness", "Inclusiveness", "Reliability and safety", "Accountability"],
+      "correct": 1,
+      "explanation": "Inclusiveness ensures AI benefits everyone, including people with disabilities, by addressing diverse human needs."
+    },
+    {
+      "id": 5,
+      "domain": "Computer Vision",
+      "question": "You need to ensure photos contain faces with people wearing sunglasses. What should you use?",
+      "options": ["The Verify operation in the Face service", "The Detect operation in the Face service", "The Describe Image operation in Computer Vision", "The Analyze Image operation in Computer Vision"],
+      "correct": 1,
+      "explanation": "The Face Detect operation can detect faces and return attributes including whether the person is wearing glasses."
+    },
+    {
+      "id": 6,
+      "domain": "Responsible AI",
+      "question": "When you design an AI system to assess whether loans should be approved, the factors used to make the decision should be explainable. This is an example of which principle?",
+      "options": ["Transparency", "Inclusiveness", "Fairness", "Privacy and security"],
+      "correct": 0,
+      "explanation": "Transparency means AI decisions should be explainable and understandable."
+    },
+    {
+      "id": 7,
+      "domain": "Responsible AI",
+      "question": "What are three Microsoft guiding principles for responsible AI?",
+      "options": ["Knowledgeability, Decisiveness, Opinionatedness", "Inclusiveness, Fairness, Reliability and safety", "Agility, Performance, Scalability", "Speed, Accuracy, Cost-effectiveness"],
+      "correct": 1,
+      "explanation": "The six principles are: Fairness, Reliability and safety, Privacy and security, Inclusiveness, Transparency, and Accountability."
+    },
+    {
+      "id": 8,
+      "domain": "Machine Learning",
+      "question": "Which machine learning technique would you use to predict house prices?",
+      "options": ["Classification", "Regression", "Clustering", "Anomaly detection"],
+      "correct": 1,
+      "explanation": "Regression is used to predict continuous numeric values like prices."
+    },
+    {
+      "id": 9,
+      "domain": "Machine Learning",
+      "question": "Which machine learning technique groups similar customers together?",
+      "options": ["Classification", "Regression", "Clustering", "Deep learning"],
+      "correct": 2,
+      "explanation": "Clustering groups similar data points without predefined labels, useful for customer segmentation."
+    },
+    {
+      "id": 10,
+      "domain": "NLP",
+      "question": "Which Azure service would you use for sentiment analysis?",
+      "options": ["Azure AI Vision", "Azure AI Language", "Azure AI Speech", "Azure OpenAI"],
+      "correct": 1,
+      "explanation": "Azure AI Language service provides text analysis features including sentiment analysis."
+    },
+    {
+      "id": 11,
+      "domain": "NLP",
+      "question": "What NLP feature identifies people, places, and organizations in text?",
+      "options": ["Sentiment Analysis", "Key Phrase Extraction", "Named Entity Recognition", "Language Detection"],
+      "correct": 2,
+      "explanation": "Named Entity Recognition (NER) identifies and categorizes entities like people, places, and organizations."
+    },
+    {
+      "id": 12,
+      "domain": "Computer Vision",
+      "question": "What is the difference between Image Classification and Object Detection?",
+      "options": ["Classification detects objects, Detection classifies images", "Classification assigns one label to the image, Detection locates multiple objects with bounding boxes", "They are the same thing", "Classification uses neural networks, Detection uses traditional algorithms"],
+      "correct": 1,
+      "explanation": "Image Classification assigns a single label to an image, while Object Detection identifies and locates multiple objects with bounding boxes."
+    },
+    {
+      "id": 13,
+      "domain": "Generative AI",
+      "question": "What is Azure AI Foundry?",
+      "options": ["A machine learning algorithm", "A unified platform for building AI solutions", "A computer vision service", "A speech recognition tool"],
+      "correct": 1,
+      "explanation": "Azure AI Foundry (formerly Azure AI Studio) is a unified platform that combines multiple Azure AI services for building AI solutions."
+    },
+    {
+      "id": 14,
+      "domain": "Generative AI",
+      "question": "What is the purpose of RAG (Retrieval-Augmented Generation)?",
+      "options": ["To speed up model training", "To reduce model size", "To ground AI responses in external knowledge and reduce hallucinations", "To improve image generation"],
+      "correct": 2,
+      "explanation": "RAG combines LLM with external knowledge sources to ground responses in facts and reduce hallucinations."
+    },
+    {
+      "id": 15,
+      "domain": "Generative AI",
+      "question": "What are AI hallucinations?",
+      "options": ["Visual artifacts in generated images", "When AI generates false information that seems plausible", "Errors in speech recognition", "Slow response times"],
+      "correct": 1,
+      "explanation": "Hallucinations occur when AI generates false or fabricated information that appears believable."
+    },
+    {
+      "id": 16,
+      "domain": "Azure Services",
+      "question": "Which Azure service provides access to GPT-4 and DALL-E models?",
+      "options": ["Azure AI Vision", "Azure AI Language", "Azure OpenAI Service", "Azure Machine Learning"],
+      "correct": 2,
+      "explanation": "Azure OpenAI Service provides access to OpenAI models including GPT-4, GPT-3.5, DALL-E, and Whisper."
+    },
+    {
+      "id": 17,
+      "domain": "Machine Learning",
+      "question": "In a confusion matrix, what does True Positive (TP) mean?",
+      "options": ["Model predicted negative, actual was negative", "Model predicted positive, actual was positive", "Model predicted positive, actual was negative", "Model predicted negative, actual was positive"],
+      "correct": 1,
+      "explanation": "True Positive means the model correctly predicted a positive outcome."
+    },
+    {
+      "id": 18,
+      "domain": "Computer Vision",
+      "question": "Which Face service operation would you use to verify if two photos show the same person?",
+      "options": ["Detect", "Verify", "Identify", "Group"],
+      "correct": 1,
+      "explanation": "Verify performs 1-to-1 comparison to determine if two faces are the same person."
+    },
+    {
+      "id": 19,
+      "domain": "NLP",
+      "question": "What is the difference between Speech Recognition and Speech Synthesis?",
+      "options": ["They are the same thing", "Recognition converts speech to text, Synthesis converts text to speech", "Recognition converts text to speech, Synthesis converts speech to text", "Recognition analyzes sentiment, Synthesis generates language"],
+      "correct": 1,
+      "explanation": "Speech Recognition (Speech-to-Text) converts audio to text. Speech Synthesis (Text-to-Speech) converts text to audio."
+    },
+    {
+      "id": 20,
+      "domain": "Responsible AI",
+      "question": "Your company wants to ensure voice recognition works for people with different accents. Which responsible AI principle does this address?",
+      "options": ["Accountability", "Fairness", "Inclusiveness", "Privacy and security"],
+      "correct": 2,
+      "explanation": "Inclusiveness ensures AI works for everyone regardless of their background, including different accents."
+    },
+    {
+      "id": 21,
+      "domain": "Machine Learning",
+      "question": "What is the main purpose of Automated Machine Learning (AutoML)?",
+      "options": ["To manually tune hyperparameters", "To automatically select algorithms and tune hyperparameters", "To create training data", "To deploy models to production"],
+      "correct": 1,
+      "explanation": "AutoML automatically selects the best algorithms, tunes hyperparameters, and compares model performance."
+    },
+    {
+      "id": 22,
+      "domain": "Generative AI",
+      "question": "What is prompt engineering?",
+      "options": ["Building hardware for AI", "Crafting effective inputs to get desired outputs from AI models", "Training AI models from scratch", "Debugging AI systems"],
+      "correct": 1,
+      "explanation": "Prompt engineering is the practice of crafting effective inputs (prompts) to get the desired outputs from AI models."
+    },
+    {
+      "id": 23,
+      "domain": "AI Workloads",
+      "question": "Which AI workload would you use to extract text from scanned documents?",
+      "options": ["Image Classification", "Object Detection", "Optical Character Recognition (OCR)", "Facial Detection"],
+      "correct": 2,
+      "explanation": "OCR extracts printed or handwritten text from images and documents."
+    },
+    {
+      "id": 24,
+      "domain": "Generative AI",
+      "question": "What is the difference between zero-shot and few-shot prompting?",
+      "options": ["Zero-shot is faster, few-shot is more accurate", "Zero-shot uses no examples, few-shot provides examples in the prompt", "Zero-shot is for images, few-shot is for text", "They are the same technique"],
+      "correct": 1,
+      "explanation": "Zero-shot prompting asks directly without examples. Few-shot prompting includes examples to guide the model's response."
+    },
+    {
+      "id": 25,
+      "domain": "Azure Services",
+      "question": "What is the Model Catalog in Azure AI Foundry?",
+      "options": ["A list of training datasets", "A feature to browse and deploy AI models from various providers", "A debugging tool", "A cost calculator"],
+      "correct": 1,
+      "explanation": "The Model Catalog allows you to browse and deploy AI models including OpenAI, open-source, and Microsoft models."
+    },
+    {
+      "id": 26,
+      "domain": "Machine Learning",
+      "question": "Which type of machine learning should you use to predict the number of gift cards that will be sold next month?",
+      "options": ["Classification", "Regression", "Clustering"],
+      "correct": 1,
+      "explanation": "Regression predicts numeric values. Predicting a quantity (number of items) is a regression task."
+    },
+    {
+      "id": 27,
+      "domain": "Machine Learning",
+      "question": "You need to predict the sea level in meters for the next 10 years. Which type of machine learning should you use?",
+      "options": ["Classification", "Regression", "Clustering"],
+      "correct": 1,
+      "explanation": "Regression is used to predict continuous numeric values like sea level measurements."
+    },
+    {
+      "id": 28,
+      "domain": "Machine Learning",
+      "question": "You have a dataset about taxi journeys. To predict fare, which should you use as a feature?",
+      "options": ["The number of taxi journeys in the dataset", "The trip distance of individual taxi journeys", "The fare of individual taxi journeys", "The trip ID of individual taxi journeys"],
+      "correct": 1,
+      "explanation": "Trip distance is an input (feature) that influences fare. The fare itself is the label (what you predict). Trip ID is just an identifier with no predictive value."
+    },
+    {
+      "id": 29,
+      "domain": "Azure Services",
+      "question": "Which service should you use to extract text, key/value pairs, and table data automatically from scanned documents?",
+      "options": ["Form Recognizer", "Text Analytics", "Language Understanding", "Custom Vision"],
+      "correct": 0,
+      "explanation": "Form Recognizer (now Azure AI Document Intelligence) extracts text, key-value pairs, and tables from forms and documents."
+    },
+    {
+      "id": 30,
+      "domain": "Machine Learning",
+      "question": "You use Azure Machine Learning designer to publish an inference pipeline. Which two parameters do you need to access the web service?",
+      "options": ["The model name and training endpoint", "The authentication key and REST endpoint", "The dataset ID and compute cluster", "The experiment name and run ID"],
+      "correct": 1,
+      "explanation": "To consume a published pipeline, you need the REST endpoint and the authentication key (Primary Key)."
+    },
+    {
+      "id": 31,
+      "domain": "Machine Learning",
+      "question": "A medical research project uses brain scan images categorized into brain haemorrhage types. To detect these types before human review, which ML type should you use?",
+      "options": ["Clustering", "Regression", "Classification"],
+      "correct": 2,
+      "explanation": "Classification predicts categorical labels. Identifying which type of haemorrhage (predefined categories) is classification."
+    },
+    {
+      "id": 32,
+      "domain": "Machine Learning",
+      "question": "When training a model, why should you randomly split the rows into separate subsets?",
+      "options": ["To train the model twice to attain better accuracy", "To train multiple models simultaneously", "To test the model by using data that was not used to train the model"],
+      "correct": 2,
+      "explanation": "Splitting data lets you evaluate model performance on unseen data, preventing overfitting."
+    },
+    {
+      "id": 33,
+      "domain": "Computer Vision",
+      "question": "You are building a tool to identify competitor products from retail store images. Which Azure service should you use?",
+      "options": ["Custom Vision", "Form Recognizer", "Face", "Computer Vision"],
+      "correct": 0,
+      "explanation": "Custom Vision lets you train custom image classifiers and object detectors for specific use cases like identifying specific products."
+    },
+    {
+      "id": 34,
+      "domain": "Machine Learning",
+      "question": "What are two metrics you can use to evaluate a regression model?",
+      "options": ["F1 score and AUC", "Coefficient of determination (R2) and RMSE", "Precision and Recall", "Accuracy and F1 score"],
+      "correct": 1,
+      "explanation": "R2 and RMSE are regression metrics. F1, AUC, Precision, Recall, and Accuracy are classification metrics."
+    },
+    {
+      "id": 35,
+      "domain": "Machine Learning",
+      "question": "Which type of machine learning should you use to identify groups of people who have similar purchasing habits?",
+      "options": ["Classification", "Regression", "Clustering"],
+      "correct": 2,
+      "explanation": "Clustering groups similar data points together without predefined labels, perfect for customer segmentation."
+    },
+    {
+      "id": 36,
+      "domain": "Machine Learning",
+      "question": "Which metric can you use to evaluate a classification model?",
+      "options": ["True positive rate", "Mean absolute error (MAE)", "Coefficient of determination (R2)", "Root mean squared error (RMSE)"],
+      "correct": 0,
+      "explanation": "True positive rate (recall/sensitivity) is a classification metric. MAE, R2, and RMSE are regression metrics."
+    },
+    {
+      "id": 37,
+      "domain": "Machine Learning",
+      "question": "Which two components can you drag onto a canvas in Azure Machine Learning designer?",
+      "options": ["Dataset and Module", "Compute and Pipeline", "Endpoint and Experiment", "Cluster and Workspace"],
+      "correct": 0,
+      "explanation": "In Azure ML Designer, you drag-and-drop datasets and modules onto the canvas to build pipelines."
+    },
+    {
+      "id": 38,
+      "domain": "Machine Learning",
+      "question": "You need to create a training dataset and validation dataset from an existing dataset. Which module should you use?",
+      "options": ["Select Columns in Dataset", "Add Rows", "Split Data", "Join Data"],
+      "correct": 2,
+      "explanation": "Split Data module divides a dataset into training and validation sets."
+    },
+    {
+      "id": 39,
+      "domain": "Machine Learning",
+      "question": "Which two actions are performed during data ingestion and data preparation in Azure ML?",
+      "options": ["Calculate model accuracy and Score test data", "Combine multiple datasets and Remove records with missing values", "Deploy model and Use for real-time predictions", "Train model and Evaluate model"],
+      "correct": 1,
+      "explanation": "Data preparation involves combining datasets and cleaning data (removing missing values). Model evaluation and deployment come later."
+    },
+    {
+      "id": 40,
+      "domain": "Machine Learning",
+      "question": "You need to predict the animal population of an area. Which Azure Machine Learning type should you use?",
+      "options": ["Regression", "Clustering", "Classification"],
+      "correct": 0,
+      "explanation": "Predicting population (a numeric value) is a regression task."
+    },
+    {
+      "id": 41,
+      "domain": "Machine Learning",
+      "question": "Which two languages can you use to write custom code for Azure Machine Learning designer?",
+      "options": ["Python and R", "C# and Java", "JavaScript and TypeScript", "Go and Rust"],
+      "correct": 0,
+      "explanation": "Azure ML Designer supports custom Python and R code modules."
+    },
+    {
+      "id": 42,
+      "domain": "Computer Vision",
+      "question": "Your company wants to build a recycling machine that identifies bottles by shape. Which AI workload should you use?",
+      "options": ["Anomaly detection", "Conversational AI", "Computer vision", "Natural language processing"],
+      "correct": 2,
+      "explanation": "Computer vision analyzes images to identify objects by their visual characteristics like shape."
+    },
+    {
+      "id": 43,
+      "domain": "Computer Vision",
+      "question": "In which two scenarios can you use Form Recognizer?",
+      "options": ["Extract invoice numbers and Identify retailers from receipts", "Translate forms and Find product images", "Detect faces and Analyze sentiment", "Generate text and Translate languages"],
+      "correct": 0,
+      "explanation": "Form Recognizer extracts structured data from documents like invoices and receipts."
+    },
+    {
+      "id": 44,
+      "domain": "Computer Vision",
+      "question": "You need to develop a mobile app for employees to scan and store expenses while traveling. Which computer vision type should you use?",
+      "options": ["Semantic segmentation", "Image classification", "Object detection", "Optical character recognition (OCR)"],
+      "correct": 3,
+      "explanation": "OCR extracts text from images, perfect for scanning receipts and expense documents."
+    },
+    {
+      "id": 45,
+      "domain": "Computer Vision",
+      "question": "You are processing photos of runners. You need to read numbers on shirts to identify runners. Which computer vision should you use?",
+      "options": ["Facial recognition", "Optical character recognition (OCR)", "Image classification", "Object detection"],
+      "correct": 1,
+      "explanation": "OCR extracts text (including numbers) from images."
+    },
+    {
+      "id": 46,
+      "domain": "Computer Vision",
+      "question": "You use drones to identify weeds between crop rows. This is an example of which computer vision type?",
+      "options": ["Object detection", "Optical character recognition (OCR)", "Scene segmentation"],
+      "correct": 0,
+      "explanation": "Object detection identifies and locates specific objects (weeds) in images with bounding boxes."
+    },
+    {
+      "id": 47,
+      "domain": "Computer Vision",
+      "question": "You need to determine the location of cars in an image to estimate distance between them. Which computer vision should you use?",
+      "options": ["Optical character recognition (OCR)", "Object detection", "Image classification", "Face detection"],
+      "correct": 1,
+      "explanation": "Object detection returns bounding box coordinates for objects, allowing you to calculate distances between them."
+    },
+    {
+      "id": 48,
+      "domain": "Computer Vision",
+      "question": "Which Computer Vision feature can you use to generate automatic captions for photographs?",
+      "options": ["Recognize text", "Identify areas of interest", "Detect objects", "Describe the images"],
+      "correct": 3,
+      "explanation": "The Describe Image feature generates human-readable captions describing image contents."
+    },
+    {
+      "id": 49,
+      "domain": "Machine Learning",
+      "question": "What is a use case for classification?",
+      "options": ["Predicting coffee consumption based on sleep hours", "Grouping images by similar colors", "Predicting if someone bikes to work based on distance", "Predicting race completion time"],
+      "correct": 2,
+      "explanation": "Predicting yes/no (bikes or not) is binary classification. The others are regression (numeric prediction) or clustering (grouping)."
+    },
+    {
+      "id": 50,
+      "domain": "Computer Vision",
+      "question": "You need to build an image tagging solution for social media that tags friends automatically. Which service should you use?",
+      "options": ["Face", "Form Recognizer", "Text Analytics", "Computer Vision"],
+      "correct": 0,
+      "explanation": "The Face service identifies and recognizes specific people, enabling automatic friend tagging."
+    },
+    {
+      "id": 51,
+      "domain": "Azure Services",
+      "question": "You need to predict ice cream sales based on historic data including daily sales totals and weather measurements. Which Azure service should you use?",
+      "options": ["Azure Machine Learning", "Azure AI Bot Service", "Azure AI Language"],
+      "correct": 0,
+      "explanation": "Azure Machine Learning is used for training predictive models based on historical data."
+    },
+    {
+      "id": 52,
+      "domain": "Computer Vision",
+      "question": "A wildlife sanctuary needs to identify bird species from images. Which AI service should you use?",
+      "options": ["Azure AI Vision", "Azure AI Search", "Azure OpenAI"],
+      "correct": 0,
+      "explanation": "Azure AI Vision (or Custom Vision) can be trained to identify and classify different species from images."
+    },
+    {
+      "id": 53,
+      "domain": "Machine Learning",
+      "question": "You need to predict heating costs for office buildings based on square footage and employee count. What type of ML problem is this?",
+      "options": ["Regression", "Classification", "Clustering"],
+      "correct": 0,
+      "explanation": "Predicting a continuous numeric value (cost) is a regression problem."
+    },
+    {
+      "id": 54,
+      "domain": "Machine Learning",
+      "question": "Which metric can you use to evaluate a classification model?",
+      "options": ["Mean squared error (MSE)", "Precision", "Silhouette score"],
+      "correct": 1,
+      "explanation": "Precision is a classification metric. MSE is for regression, and Silhouette score is for clustering."
+    },
+    {
+      "id": 55,
+      "domain": "Machine Learning",
+      "question": "What is the purpose of a loss function in deep learning?",
+      "options": ["Remove data without known labels", "Evaluate aggregate difference between predicted and actual values", "Calculate neural network training costs"],
+      "correct": 1,
+      "explanation": "A loss function measures how well the model's predictions match the actual values during training."
+    },
+    {
+      "id": 56,
+      "domain": "Machine Learning",
+      "question": "What does automated machine learning (AutoML) enable you to do?",
+      "options": ["Auto-deploy new model versions", "Auto-provision workspaces for data scientists", "Run multiple training jobs with different algorithms to find best model"],
+      "correct": 2,
+      "explanation": "AutoML automatically tries different algorithms and hyperparameters to find the best performing model."
+    },
+    {
+      "id": 57,
+      "domain": "Azure Services",
+      "question": "Your application needs three separate AI services with individual cost visibility. What resource type should you create?",
+      "options": ["Multi-service resource bundling all services", "Single-service resource for each AI service", "One Azure AI services resource"],
+      "correct": 1,
+      "explanation": "Creating single-service resources allows you to track costs individually for each AI service."
+    },
+    {
+      "id": 58,
+      "domain": "Azure Services",
+      "question": "What is an Azure AI services resource?",
+      "options": ["A bundle of several AI services in one resource", "An AI service for face recognition only", "A single-service resource for Azure AI Search"],
+      "correct": 0,
+      "explanation": "Azure AI services is a multi-service resource that provides access to multiple AI services with a single key and endpoint."
+    },
+    {
+      "id": 59,
+      "domain": "Computer Vision",
+      "question": "Computer vision relies on manipulation and analysis of what in images?",
+      "options": ["Timestamps in metadata", "Pixels", "Image file names"],
+      "correct": 1,
+      "explanation": "Computer vision analyzes the pixel data in images to extract meaningful information."
+    },
+    {
+      "id": 60,
+      "domain": "Computer Vision",
+      "question": "You need to identify the location of individual items in images using Azure AI Vision. Which feature should you use?",
+      "options": ["Objects", "Visual Tags", "Dense Captions"],
+      "correct": 0,
+      "explanation": "The Objects feature identifies and locates objects in images with bounding boxes."
+    },
+    {
+      "id": 61,
+      "domain": "Computer Vision",
+      "question": "How does the Face service indicate face locations in images?",
+      "options": ["Single coordinate pair per face (center point)", "Two coordinate pairs per face (eye locations)", "Rectangular bounding box coordinates per face"],
+      "correct": 2,
+      "explanation": "The Face service returns a rectangular bounding box with coordinates for each detected face."
+    },
+    {
+      "id": 62,
+      "domain": "Computer Vision",
+      "question": "What aspect might impair facial detection?",
+      "options": ["Glasses", "Extreme angles", "Fast shutter speed"],
+      "correct": 1,
+      "explanation": "Extreme angles can make it difficult for the Face service to detect faces accurately."
+    },
+    {
+      "id": 63,
+      "domain": "Computer Vision",
+      "question": "What results can Azure AI Vision's Read API provide?",
+      "options": ["Results arranged in pages, lines, and words", "Only bounding box coordinates", "Pages organized by photos first then text"],
+      "correct": 0,
+      "explanation": "The Read API returns OCR results organized hierarchically: pages, lines, and words."
+    },
+    {
+      "id": 64,
+      "domain": "NLP",
+      "question": "You need to determine key talking points in text documents. Which Azure AI Language feature should you use?",
+      "options": ["Sentiment analysis", "Key phrase extraction", "Entity detection"],
+      "correct": 1,
+      "explanation": "Key phrase extraction identifies the main talking points and important concepts in text."
+    },
+    {
+      "id": 65,
+      "domain": "NLP",
+      "question": "Sentiment analysis returns confidence scores: 0.04 positive, 0.36 neutral, 0.60 negative. What does this indicate?",
+      "options": ["Document is positive", "Document is neutral", "Document is negative"],
+      "correct": 2,
+      "explanation": "The highest confidence score (0.60) is for negative sentiment, indicating the document is negative."
+    },
+    {
+      "id": 66,
+      "domain": "NLP",
+      "question": "When might you see NaN returned for language detection scores?",
+      "options": ["Score outside 0-1 range", "Mixed languages detected", "Language is ambiguous"],
+      "correct": 2,
+      "explanation": "NaN (Not a Number) is returned when the language cannot be determined with confidence."
+    },
+    {
+      "id": 67,
+      "domain": "NLP",
+      "question": "You need to create a knowledge base from an existing FAQ document with minimal effort. What should you do?",
+      "options": ["Create empty base and manually copy-paste entries", "Import existing FAQ document into new knowledge base", "Import pre-defined chit-chat data source"],
+      "correct": 1,
+      "explanation": "Question Answering service can import existing FAQ documents directly to create a knowledge base."
+    },
+    {
+      "id": 68,
+      "domain": "Azure Services",
+      "question": "You need to create a knowledge base for your organization's bot service. Which Azure AI service is best?",
+      "options": ["Conversational Language Understanding", "Question Answering", "Optical Character Recognition"],
+      "correct": 1,
+      "explanation": "Question Answering (part of Azure AI Language) creates knowledge bases for FAQ-style Q&A bots."
+    },
+    {
+      "id": 69,
+      "domain": "NLP",
+      "question": "You are creating an application supporting an international clock, allowing users to ask 'What is the time in London?' What should you do?",
+      "options": ["Define 'city' entity and 'GetTime' intent with labeled utterances", "Create intent per city with city-specific utterances", "Add utterance to 'None' intent"],
+      "correct": 0,
+      "explanation": "Define a city entity and GetTime intent so the model learns to extract the city from any time query."
+    },
+    {
+      "id": 70,
+      "domain": "NLP",
+      "question": "After publishing a conversational language understanding application, what information does the developer need?",
+      "options": ["Prediction resource endpoint and key", "Authoring resource endpoint and key", "Azure credentials of publishing user"],
+      "correct": 0,
+      "explanation": "Developers need the prediction endpoint and key to call the published model from their applications."
+    },
+    {
+      "id": 71,
+      "domain": "NLP",
+      "question": "You need to read incoming email message subjects aloud using Azure AI Speech. Which API should you use?",
+      "options": ["Speech to text", "Text to speech", "Translator"],
+      "correct": 1,
+      "explanation": "Text to speech (speech synthesis) converts written text into spoken audio."
+    },
+    {
+      "id": 72,
+      "domain": "Azure Services",
+      "question": "You plan to use Azure AI Document Intelligence's prebuilt receipt model. What resource type should you use?",
+      "options": ["Azure AI Vision resource", "Azure AI Document Intelligence or Azure AI services resource", "Azure AI Language resource"],
+      "correct": 1,
+      "explanation": "Document Intelligence models require a Document Intelligence resource or an Azure AI services multi-service resource."
+    },
+    {
+      "id": 73,
+      "domain": "Azure Services",
+      "question": "Which data format does Azure AI Search accept when pushing data to an index?",
+      "options": ["CSV", "SQL", "JSON"],
+      "correct": 2,
+      "explanation": "Azure AI Search accepts JSON format when pushing data to an index."
+    },
+    {
+      "id": 74,
+      "domain": "Generative AI",
+      "question": "What are Large Language Models (LLMs)?",
+      "options": ["Models working with single language only", "Models working with small data amounts only", "Models using deep learning to process natural language at massive scale"],
+      "correct": 2,
+      "explanation": "LLMs are deep learning models trained on massive amounts of text data to understand and generate natural language."
+    },
+    {
+      "id": 75,
+      "domain": "Generative AI",
+      "question": "Which of the following is a capability of Azure OpenAI Service?",
+      "options": ["Training custom computer vision models", "Generating natural language responses and code", "Creating custom speech voices"],
+      "correct": 1,
+      "explanation": "Azure OpenAI Service provides access to GPT models that can generate natural language, code, and more."
+    },
+    {
+      "id": 76,
+      "domain": "Generative AI",
+      "question": "What is the system message in Azure OpenAI?",
+      "options": ["Error messages from the API", "Instructions that define the AI assistant's behavior and persona", "Log messages for debugging"],
+      "correct": 1,
+      "explanation": "The system message sets the context, behavior, and constraints for the AI model's responses."
+    },
+    {
+      "id": 77,
+      "domain": "Generative AI",
+      "question": "What is grounding in the context of generative AI?",
+      "options": ["Connecting the AI to electrical ground", "Providing context or data to make responses more accurate and relevant", "Limiting the model's creativity"],
+      "correct": 1,
+      "explanation": "Grounding provides the model with relevant context or data to generate more accurate, factual responses."
+    },
+    {
+      "id": 78,
+      "domain": "Generative AI",
+      "question": "What is the temperature parameter in Azure OpenAI?",
+      "options": ["The physical temperature of the server", "A setting that controls the randomness of the model's output", "The time limit for API responses"],
+      "correct": 1,
+      "explanation": "Temperature controls output randomness: lower values (0-0.3) for focused responses, higher values (0.7-1) for creative outputs."
+    },
+    {
+      "id": 79,
+      "domain": "Generative AI",
+      "question": "What is a token in the context of LLMs?",
+      "options": ["An authentication credential", "A unit of text (word, part of word, or punctuation)", "A security certificate"],
+      "correct": 1,
+      "explanation": "Tokens are the basic units that LLMs process - they can be words, parts of words, or punctuation marks."
+    },
+    {
+      "id": 80,
+      "domain": "Generative AI",
+      "question": "What is the purpose of content filtering in Azure OpenAI?",
+      "options": ["To compress the content for faster processing", "To detect and block harmful or inappropriate content", "To translate content to different languages"],
+      "correct": 1,
+      "explanation": "Content filtering helps ensure responsible AI use by detecting and preventing harmful content in inputs and outputs."
+    },
+    {
+      "id": 81,
+      "domain": "Generative AI",
+      "question": "What is an embedding in the context of Azure OpenAI?",
+      "options": ["A way to insert images into text", "A numeric vector representation of text for similarity comparisons", "A method to embed code in documents"],
+      "correct": 1,
+      "explanation": "Embeddings convert text into numeric vectors that capture semantic meaning for similarity search and clustering."
+    },
+    {
+      "id": 82,
+      "domain": "Generative AI",
+      "question": "What is the main advantage of using Azure OpenAI over direct OpenAI API?",
+      "options": ["Lower cost per token", "Enterprise security, compliance, and regional availability", "Access to more models"],
+      "correct": 1,
+      "explanation": "Azure OpenAI provides enterprise features like private networking, managed identities, and compliance certifications."
+    },
+    {
+      "id": 83,
+      "domain": "Responsible AI",
+      "question": "An AI system performs consistently under normal and unexpected conditions. Which responsible AI principle does this represent?",
+      "options": ["Fairness", "Reliability and safety", "Transparency"],
+      "correct": 1,
+      "explanation": "Reliability and safety ensures AI systems operate consistently and respond safely to unexpected situations."
+    },
+    {
+      "id": 84,
+      "domain": "Responsible AI",
+      "question": "The people who design and deploy AI systems must be answerable for how their systems operate. Which principle is this?",
+      "options": ["Transparency", "Accountability", "Inclusiveness"],
+      "correct": 1,
+      "explanation": "Accountability means people are responsible for the operation and impact of AI systems they create."
+    },
+    {
+      "id": 85,
+      "domain": "Responsible AI",
+      "question": "AI systems should comply with privacy laws and protect personal information. Which principle does this represent?",
+      "options": ["Fairness", "Privacy and security", "Transparency"],
+      "correct": 1,
+      "explanation": "Privacy and security ensures AI systems protect personal data and comply with privacy regulations."
+    },
+    {
+      "id": 86,
+      "domain": "Machine Learning",
+      "question": "What is overfitting in machine learning?",
+      "options": ["When a model performs well on training data but poorly on new data", "When a model is too simple to capture patterns", "When training takes too long"],
+      "correct": 0,
+      "explanation": "Overfitting occurs when a model memorizes training data too well and fails to generalize to new, unseen data."
+    },
+    {
+      "id": 87,
+      "domain": "Machine Learning",
+      "question": "What is the purpose of a validation dataset?",
+      "options": ["To train the model", "To tune hyperparameters and prevent overfitting during training", "To deploy the model"],
+      "correct": 1,
+      "explanation": "Validation data is used during training to tune hyperparameters and monitor for overfitting."
+    },
+    {
+      "id": 88,
+      "domain": "Machine Learning",
+      "question": "What is the difference between a feature and a label in machine learning?",
+      "options": ["Features are outputs, labels are inputs", "Features are inputs used for prediction, labels are the target values", "They are the same thing"],
+      "correct": 1,
+      "explanation": "Features are input variables used to make predictions. Labels are the target values you want to predict."
+    },
+    {
+      "id": 89,
+      "domain": "Machine Learning",
+      "question": "What is the purpose of the 'Score Model' module in Azure ML Designer?",
+      "options": ["To evaluate model accuracy", "To generate predictions using a trained model", "To split data into training and test sets"],
+      "correct": 1,
+      "explanation": "Score Model generates predictions by applying a trained model to new data."
+    },
+    {
+      "id": 90,
+      "domain": "Machine Learning",
+      "question": "Which type of machine learning uses labeled data during training?",
+      "options": ["Supervised learning", "Unsupervised learning", "Reinforcement learning"],
+      "correct": 0,
+      "explanation": "Supervised learning uses labeled data where the correct answers are known during training."
+    },
+    {
+      "id": 91,
+      "domain": "Computer Vision",
+      "question": "What is semantic segmentation in computer vision?",
+      "options": ["Detecting objects with bounding boxes", "Classifying each pixel in an image to a category", "Recognizing text in images"],
+      "correct": 1,
+      "explanation": "Semantic segmentation classifies every pixel in an image, identifying which object or category each pixel belongs to."
+    },
+    {
+      "id": 92,
+      "domain": "Azure Services",
+      "question": "Which Azure service would you use to transcribe audio from customer calls to text?",
+      "options": ["Azure AI Language", "Azure AI Speech", "Azure AI Vision"],
+      "correct": 1,
+      "explanation": "Azure AI Speech provides speech-to-text capabilities to transcribe audio to text."
+    },
+    {
+      "id": 93,
+      "domain": "NLP",
+      "question": "What is the purpose of the Translator service in Azure?",
+      "options": ["Convert speech to text", "Translate text between languages", "Analyze sentiment in text"],
+      "correct": 1,
+      "explanation": "Azure Translator provides real-time text translation between many languages."
+    },
+    {
+      "id": 94,
+      "domain": "Generative AI",
+      "question": "What is DALL-E used for in Azure OpenAI?",
+      "options": ["Generating code", "Generating images from text descriptions", "Transcribing audio"],
+      "correct": 1,
+      "explanation": "DALL-E is an image generation model that creates images based on text prompts."
+    },
+    {
+      "id": 95,
+      "domain": "Generative AI",
+      "question": "What is the 'max_tokens' parameter in Azure OpenAI API calls?",
+      "options": ["Maximum cost allowed for the request", "Maximum number of tokens in the response", "Maximum time for processing"],
+      "correct": 1,
+      "explanation": "max_tokens limits the length of the generated response measured in tokens."
+    },
+    {
+      "id": 96,
+      "domain": "Azure Services",
+      "question": "What is Azure AI Search used for?",
+      "options": ["Training machine learning models", "Creating searchable indexes over content", "Generating text responses"],
+      "correct": 1,
+      "explanation": "Azure AI Search creates powerful search experiences over structured and unstructured content."
+    },
+    {
+      "id": 97,
+      "domain": "Generative AI",
+      "question": "What is a copilot in the context of Microsoft AI?",
+      "options": ["A secondary AI model", "An AI assistant integrated into applications to help users", "A backup system for AI failures"],
+      "correct": 1,
+      "explanation": "Copilots are AI assistants embedded in applications like Microsoft 365 to help users be more productive."
+    },
+    {
+      "id": 98,
+      "domain": "Generative AI",
+      "question": "What does the 'top_p' (nucleus sampling) parameter control in Azure OpenAI?",
+      "options": ["The priority of the request", "The probability threshold for token selection", "The maximum processing time"],
+      "correct": 1,
+      "explanation": "top_p controls diversity by limiting tokens to those within a cumulative probability threshold."
+    },
+    {
+      "id": 99,
+      "domain": "Machine Learning",
+      "question": "What is the AUC metric used to evaluate in classification models?",
+      "options": ["The area under the precision-recall curve", "The area under the ROC curve measuring model discrimination ability", "The average prediction uncertainty"],
+      "correct": 1,
+      "explanation": "AUC (Area Under the Curve) measures the model's ability to distinguish between classes using the ROC curve."
+    },
+    {
+      "id": 100,
+      "domain": "Generative AI",
+      "question": "What is the primary purpose of fine-tuning in Azure OpenAI?",
+      "options": ["To reduce model size", "To customize a model for specific tasks using your own data", "To speed up inference"],
+      "correct": 1,
+      "explanation": "Fine-tuning trains a base model on your specific data to improve performance for your particular use case."
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "categories": {
+    "responsible_ai": {
+      "name": "Responsible AI Principles",
+      "cards": [
+        {"front": "What responsible AI principle ensures AI treats all people equally?", "back": "Fairness - AI systems should treat all people fairly without bias based on gender, race, or other factors."},
+        {"front": "Which principle ensures AI performs consistently under unexpected conditions?", "back": "Reliability and Safety - AI should operate reliably, respond safely to unexpected situations, and resist manipulation."},
+        {"front": "Which principle protects personal data in AI systems?", "back": "Privacy and Security - AI must protect personal data, comply with regulations, and secure data transmission."},
+        {"front": "Which principle ensures AI empowers everyone including people with disabilities?", "back": "Inclusiveness - AI should consider all human experiences and use accessible technologies."},
+        {"front": "Which principle requires AI decisions to be explainable?", "back": "Transparency - AI systems should be understandable and explain how decisions are made."},
+        {"front": "Which principle ensures humans are responsible for AI systems?", "back": "Accountability - People must be accountable for AI systems with clear governance and audit trails."},
+        {"front": "A loan approval AI must explain why applications are denied. Which principle?", "back": "Transparency - Decisions should be explainable."},
+        {"front": "Voice recognition working for all accents relates to which principle?", "back": "Inclusiveness - AI should work for everyone regardless of background."}
+      ]
+    },
+    "machine_learning": {
+      "name": "Machine Learning Concepts",
+      "cards": [
+        {"front": "What type of ML predicts continuous numeric values?", "back": "Regression - e.g., predicting house prices, temperature, sales revenue."},
+        {"front": "What type of ML predicts categorical labels?", "back": "Classification - e.g., spam detection, disease diagnosis, binary or multi-class."},
+        {"front": "What type of ML groups similar data without labels?", "back": "Clustering - unsupervised learning for customer segmentation, anomaly detection."},
+        {"front": "What are Features in machine learning?", "back": "Features are input variables (X) used to make predictions."},
+        {"front": "What are Labels in machine learning?", "back": "Labels are output variables (Y) being predicted."},
+        {"front": "How should data be split for training and evaluation?", "back": "Randomly split into ROWS - typically 70-80% training, 20-30% testing."},
+        {"front": "What is a True Positive (TP)?", "back": "Correctly predicted positive - model predicted positive and was correct."},
+        {"front": "What is a False Negative (FN)?", "back": "Incorrectly predicted negative - model predicted negative but actual was positive."},
+        {"front": "What does AutoML's 'Explain best model' enable?", "back": "Transparency principle - helps understand how the model makes decisions."},
+        {"front": "What is the Transformer architecture?", "back": "Foundation for modern LLMs, uses attention mechanisms, processes sequences in parallel."}
+      ]
+    },
+    "computer_vision": {
+      "name": "Computer Vision",
+      "cards": [
+        {"front": "What CV task assigns a single label to an image?", "back": "Image Classification - 'What is in this image?'"},
+        {"front": "What CV task identifies and locates multiple objects?", "back": "Object Detection - returns bounding boxes with coordinates."},
+        {"front": "What CV task extracts text from images?", "back": "OCR (Optical Character Recognition) - extracts printed or handwritten text."},
+        {"front": "Which Face operation checks if someone is wearing sunglasses?", "back": "Detect - locates faces and can return attributes like glasses, age, emotion."},
+        {"front": "Which Face operation compares two faces to verify identity?", "back": "Verify - 1-to-1 comparison, returns confidence score."},
+        {"front": "Which Face operation matches a face against a group of known people?", "back": "Identify - 1-to-many matching against a person group."},
+        {"front": "What Azure service handles image analysis and OCR?", "back": "Azure AI Vision service."},
+        {"front": "What Azure service handles facial detection and recognition?", "back": "Azure AI Face service."}
+      ]
+    },
+    "nlp": {
+      "name": "Natural Language Processing",
+      "cards": [
+        {"front": "What NLP feature extracts main concepts from text?", "back": "Key Phrase Extraction - identifies important terms and phrases."},
+        {"front": "What NLP feature identifies people, places, and organizations?", "back": "Named Entity Recognition (NER) - categorizes entities in text."},
+        {"front": "What NLP feature determines positive/negative tone?", "back": "Sentiment Analysis - returns positive, negative, or neutral with confidence scores."},
+        {"front": "What is Speech-to-Text also called?", "back": "Speech Recognition - converts spoken audio to text."},
+        {"front": "What is Text-to-Speech also called?", "back": "Speech Synthesis - converts text to spoken audio."},
+        {"front": "What Azure service handles text analysis features?", "back": "Azure AI Language service."},
+        {"front": "What Azure service handles audio/speech features?", "back": "Azure AI Speech service."},
+        {"front": "What NLP feature identifies which language text is written in?", "back": "Language Detection - returns language code and confidence score."}
+      ]
+    },
+    "generative_ai": {
+      "name": "Generative AI",
+      "cards": [
+        {"front": "What is Generative AI?", "back": "AI that creates new content (text, images, code) based on patterns learned from training data."},
+        {"front": "What are LLMs?", "back": "Large Language Models - trained on massive text datasets to understand and generate human-like text."},
+        {"front": "What is Azure AI Foundry?", "back": "Unified platform for building AI solutions, combining multiple Azure AI services."},
+        {"front": "What models are available in Azure OpenAI Service?", "back": "GPT-4, GPT-3.5 Turbo, DALL-E (images), Whisper (speech), Embeddings."},
+        {"front": "What is Prompt Engineering?", "back": "Crafting effective inputs to get desired outputs from AI models."},
+        {"front": "What is RAG (Retrieval-Augmented Generation)?", "back": "Combining LLM with external knowledge to ground responses in facts and reduce hallucinations."},
+        {"front": "What are AI hallucinations?", "back": "When AI generates false or fabricated information that seems plausible."},
+        {"front": "What is the Model Catalog in Azure AI Foundry?", "back": "Browse and deploy AI models including OpenAI, open-source, and Microsoft models."},
+        {"front": "What is Zero-shot prompting?", "back": "Asking a question directly without providing examples."},
+        {"front": "What is Few-shot prompting?", "back": "Providing examples in the prompt to guide the model's response."},
+        {"front": "What is the system message in Azure OpenAI?", "back": "Instructions that define the AI assistant's behavior, persona, and constraints."},
+        {"front": "What is grounding in generative AI?", "back": "Providing context or data to make AI responses more accurate and reduce hallucinations."},
+        {"front": "What is the temperature parameter?", "back": "Controls randomness: low (0-0.3) for focused/deterministic, high (0.7-1) for creative outputs."},
+        {"front": "What is a token in LLMs?", "back": "A unit of text (word, part of word, or punctuation) that LLMs process."},
+        {"front": "What is content filtering in Azure OpenAI?", "back": "Detects and blocks harmful or inappropriate content in inputs and outputs."},
+        {"front": "What are embeddings?", "back": "Numeric vector representations of text used for similarity comparisons and semantic search."},
+        {"front": "What is fine-tuning?", "back": "Training a base model on specific data to improve performance for particular tasks."},
+        {"front": "What is DALL-E used for?", "back": "Generating images from text descriptions in Azure OpenAI."},
+        {"front": "What is Whisper used for?", "back": "Speech-to-text transcription in Azure OpenAI."},
+        {"front": "What is max_tokens parameter?", "back": "Limits the maximum length of the generated response."},
+        {"front": "What is top_p (nucleus sampling)?", "back": "Controls diversity by limiting tokens to those within a cumulative probability threshold."},
+        {"front": "What is a copilot?", "back": "An AI assistant integrated into applications to help users be more productive."},
+        {"front": "What advantage does Azure OpenAI have over direct OpenAI?", "back": "Enterprise security, compliance, regional availability, and private networking."}
+      ]
+    },
+    "azure_services": {
+      "name": "Azure AI Services",
+      "cards": [
+        {"front": "What service provides GPT and DALL-E models?", "back": "Azure OpenAI Service."},
+        {"front": "What service analyzes images and extracts text?", "back": "Azure AI Vision."},
+        {"front": "What service detects and analyzes faces?", "back": "Azure AI Face."},
+        {"front": "What service provides sentiment analysis and NER?", "back": "Azure AI Language."},
+        {"front": "What service converts speech to text and vice versa?", "back": "Azure AI Speech."},
+        {"front": "What service translates text between languages?", "back": "Azure AI Translator."},
+        {"front": "What platform combines all AI services for development?", "back": "Azure AI Foundry (formerly Azure AI Studio)."},
+        {"front": "What service trains custom ML models with no code?", "back": "Azure Machine Learning (with AutoML)."},
+        {"front": "What is Azure AI Document Intelligence?", "back": "Extracts text, key-value pairs, and tables from documents (formerly Form Recognizer)."},
+        {"front": "What is Azure AI Search?", "back": "Creates searchable indexes over content with AI enrichment."},
+        {"front": "What is Custom Vision?", "back": "Trains custom image classification and object detection models."},
+        {"front": "What is Azure AI services resource?", "back": "Multi-service resource providing multiple AI services with single key/endpoint."},
+        {"front": "When use single-service vs multi-service resource?", "back": "Single-service for individual cost tracking; multi-service for convenience with one endpoint."},
+        {"front": "What is Question Answering service?", "back": "Creates knowledge bases from FAQs for Q&A bots (part of Azure AI Language)."},
+        {"front": "What is Conversational Language Understanding?", "back": "Builds intent and entity recognition for custom language understanding models."},
+        {"front": "What is Azure Bot Service?", "back": "Platform for building, testing, and deploying conversational bots."}
+      ]
+    },
+    "ml_metrics": {
+      "name": "ML Evaluation Metrics",
+      "cards": [
+        {"front": "What metrics evaluate regression models?", "back": "R² (coefficient of determination), RMSE, MAE, MSE."},
+        {"front": "What metrics evaluate classification models?", "back": "Accuracy, Precision, Recall (TPR), F1 Score, AUC."},
+        {"front": "What metrics evaluate clustering?", "back": "Silhouette score, inertia (within-cluster sum of squares)."},
+        {"front": "What is Precision?", "back": "TP / (TP + FP) - Of all positive predictions, how many were correct?"},
+        {"front": "What is Recall (Sensitivity)?", "back": "TP / (TP + FN) - Of all actual positives, how many did we find?"},
+        {"front": "What is F1 Score?", "back": "Harmonic mean of Precision and Recall: 2 × (P × R) / (P + R)."},
+        {"front": "What is AUC?", "back": "Area Under ROC Curve - measures model's ability to distinguish between classes (0.5=random, 1=perfect)."},
+        {"front": "What is R² (R-squared)?", "back": "Proportion of variance explained by the model (0-1, higher is better)."},
+        {"front": "What is RMSE?", "back": "Root Mean Squared Error - measures average prediction error in original units."},
+        {"front": "What is a confusion matrix?", "back": "Table showing TP, TN, FP, FN for classification model evaluation."}
+      ]
+    },
+    "azure_ml_designer": {
+      "name": "Azure ML Designer",
+      "cards": [
+        {"front": "What can you drag onto Azure ML Designer canvas?", "back": "Datasets and Modules."},
+        {"front": "What module splits data for training/testing?", "back": "Split Data module."},
+        {"front": "What module generates predictions from trained model?", "back": "Score Model module."},
+        {"front": "What module calculates model performance?", "back": "Evaluate Model module."},
+        {"front": "What languages for custom code in Designer?", "back": "Python and R."},
+        {"front": "What do you need to access a published pipeline?", "back": "REST endpoint and authentication key."},
+        {"front": "What is an inference pipeline?", "back": "A pipeline deployed as a web service for real-time or batch predictions."},
+        {"front": "What is a compute target?", "back": "The compute resource where training or inference runs (compute instance, cluster, AKS)."}
+      ]
+    }
+  }
+}
